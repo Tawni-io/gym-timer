@@ -227,7 +227,7 @@ bool timer_ui_init(void) {
   g_digit_w += 2;
   g_colon_w = lv_text_get_width(":", 1, &lv_font_montserrat_48, kLetterSpace) + 4;
 
-  // Right chrome: Victron-style card surface + hairline + mid rule (top/bottom buttons).
+  // Right chrome: card surface + hairline + mid rule (top/bottom buttons).
   g_rail = lv_obj_create(g_scr);
   lv_obj_set_size(g_rail, kRailW, DISPLAY_HEIGHT);
   lv_obj_align(g_rail, LV_ALIGN_RIGHT_MID, 0, 0);

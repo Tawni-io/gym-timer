@@ -16,7 +16,7 @@
 
 namespace {
 
-// VictronBLE cabin palette (src/ui/dashboard.cpp).
+// Cabin palette (ST7789).
 constexpr uint32_t kBg = 0x0D1117;
 constexpr uint32_t kCard = 0x161B22;
 constexpr uint32_t kDim = 0x30363D;
