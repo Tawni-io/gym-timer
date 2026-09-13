@@ -87,6 +87,8 @@ After a save, WORKOUT is ready to start. Countdown length stays on the device wi
 pio run -e bringup
 ```
 
+Public images (GitHub Releases, SoftAP, USB that leaves the bench) are **`build_type = release` only** — never `-ggdb2`.
+
 Version string: `-DTAWNI_GYM_VERSION` in `platformio.ini` (keep the `#ifndef` fallbacks in `src/main.cpp` and `src/softap/softap.cpp` the same). Bump that, add a [CHANGELOG](CHANGELOG.md) entry, then tag `vX.Y.Z`.
 
 Touch-IC gold test: `pio run -e bringup_touch -t upload`
