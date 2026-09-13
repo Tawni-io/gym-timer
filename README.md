@@ -5,7 +5,7 @@ Stopwatch, countdown, and gym intervals on the same Tawni box.
 **Hardware:** [LILYGO T-Display C5](https://www.lilygo.cc/products/t-display-c5) (ESP32-C5, 1.9″ 320×170).  
 **Product:** [tawni.io](https://tawni.io)
 
-Current version: **v0.5.4** — [changelog](CHANGELOG.md) · [releases](https://github.com/Tawni-io/gym-timer/releases)
+Current version: **v0.5.5** — [changelog](CHANGELOG.md) · [releases](https://github.com/Tawni-io/gym-timer/releases)
 
 ---
 
