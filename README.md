@@ -5,11 +5,11 @@ Stopwatch, countdown, and gym intervals on the same Tawni box.
 **Hardware:** [LILYGO T-Display C5](https://www.lilygo.cc/products/t-display-c5) (ESP32-C5, 1.9″ 320×170).  
 **Product:** [tawni.io](https://tawni.io)
 
-Current version: **v0.5.5** — [changelog](CHANGELOG.md) · [releases](https://github.com/Tawni-io/gym-timer/releases)
+Current version: **v0.1.0** — [changelog](CHANGELOG.md) · [releases](https://github.com/Tawni-io/gym-timer/releases)
 
 ---
 
-## What this face does
+## What this firmware does
 
 | Mode | Shows |
 | --- | --- |
@@ -35,7 +35,7 @@ Same map on TIMER, COUNTDOWN, and WORKOUT. Enclosure marks the **setup** button 
 | Both held (~3 s) | Soft power-off (deep sleep) |
 | GPIO0 after wake (~1.5 s) | Stay on |
 
-If WORKOUT has not been saved yet, that face tells you how to open setup. Swipe left/right cycles mode if the touch IC is fitted.
+If WORKOUT has not been saved yet, that mode tells you how to open setup. Swipe left/right cycles mode if the touch IC is fitted.
 
 ---
 
@@ -64,13 +64,13 @@ pio run -e bringup -t upload
 Field binary: `.pio/build/bringup/firmware.bin`  
 Rename for a release: `gym-timer-t-display-c5-vX.Y.Z.bin`
 
-USB-C is first flash and recovery. This face’s SoftAP is workout setup (not firmware upload yet).
+USB-C is first flash and recovery. This firmware's SoftAP is workout setup (not firmware upload yet).
 
 ---
 
-## Setup (this face)
+## Setup (this firmware)
 
-This face’s hotspot is **GymTimer**. Other Tawni faces use their own SSID so two boxes on the bench do not collide.
+This firmware's hotspot is **GymTimer**. Other Tawni firmwares use their own SSID so two boxes on the bench do not collide.
 
 1. Hold the bottom button ~3 s until the cabin shows **SETUP MODE**
 2. Join **GymTimer** (open network) → `http://192.168.4.1`

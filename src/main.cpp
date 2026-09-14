@@ -161,7 +161,7 @@ void leave_softap(void) {
   }
 
   show_face();
-  Serial.println("SoftAP leave → timer face");
+  Serial.println("SoftAP leave → timer UI");
 }
 
 void on_mode_switch(void) {
@@ -242,7 +242,7 @@ void poll_buttons(void) {
     }
   }
 
-  // Bottom alone. Face: short = start/pause, ~1.5 s = reset, keep holding ~3 s = unlabeled setup.
+  // Bottom alone. Cabin: short = start/pause, ~1.5 s = reset, keep holding ~3 s = unlabeled setup.
   // Setup overlay: ~1.5 s hold leaves.
   if (down_bot && !down_top) {
     if (!was_bot) {
